@@ -11,5 +11,5 @@
   - [ ] `author`
   - [ ] `bugs`
   - [ ] `homepage`
-- [ ] Review `.github/workflows/release.yml` and possibly uncomment step
+- [ ] Review `.github/workflows/release.yml` and possibly uncomment steps
 - [ ] Activate repo on codecov if necessary
