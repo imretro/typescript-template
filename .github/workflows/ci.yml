@@ -25,7 +25,8 @@ jobs:
     - run: npm run build:docs -- --treatWarningsAsErrors
     - name: Test and Generate Coverage
       run: npm test
-    - name: Upload Coverage Report
-      uses: codecov/codecov-action@v2
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+    # TODO Uncomment to use codecov
+    # - name: Upload Coverage Report
+    #   uses: codecov/codecov-action@v2
+    #   with:
+    #     token: ${{ secrets.CODECOV_TOKEN }}
