@@ -11,6 +11,7 @@
   - [ ] `author`
   - [ ] `bugs`
   - [ ] `homepage`
+  - [ ] Unset `private` if necessary
 - [ ] Review TODOs in `.github/workflows/ci.yml`
 - [ ] Review `.github/workflows/release.yml` and possibly uncomment steps
 - [ ] Activate repo on codecov if necessary
