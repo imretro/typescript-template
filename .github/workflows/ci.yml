@@ -21,12 +21,23 @@ jobs:
         # TODO Uncomment one of the below to cache dependencies
         # cache: npm
         # cache: yarn
-    - run: npm ci
-    - run: npm run lint
-    - run: npm run build --if-present
-    - run: npm run build:docs -- --treatWarningsAsErrors
-    - name: Test and Generate Coverage
-      run: npm test
+    # TODO Uncomment one of the below
+    ### npm {{{
+    # - run: npm ci
+    # - run: npm run lint
+    # - run: npm run build --if-present
+    # - run: npm run build:docs -- --treatWarningsAsErrors
+    # - name: Test and Generate Coverage
+    #   run: npm test
+    ### }}} npm
+    ### yarn {{{
+    # - run: yarn install --frozen-lockfile
+    # - run: yarn lint
+    # - run: yarn build
+    # - run: yarn build:docs --treatWarningsAsErrors
+    # - name: Test and Generate Coverage
+    #   run: yarn test
+    ### }}} yarn
     # TODO Uncomment to use codecov
     # - name: Upload Coverage Report
     #   uses: codecov/codecov-action@v2
