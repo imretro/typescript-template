@@ -1,7 +1,7 @@
 module.exports = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
-  coverageProvider: 'babel',
+  coverageProvider: 'v8',
   moduleFileExtensions: ['js', 'ts'],
   testMatch: ['**/*.test.ts'],
   transform: {
