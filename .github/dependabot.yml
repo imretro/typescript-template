@@ -6,6 +6,14 @@ version: 2
 updates:
   - package-ecosystem: npm
     directory: "/"
+    groups:
+      jest:
+        patterns:
+          - "jest"
+          - "jest/*"
+      typescript-eslint:
+        patterns:
+          - "typescript-eslint/*"
     schedule:
       interval: weekly
   - package-ecosystem: github-actions
