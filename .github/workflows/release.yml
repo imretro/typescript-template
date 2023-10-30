@@ -25,7 +25,7 @@ jobs:
       pages: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 16.x
       - run: npm ci
@@ -48,7 +48,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Prepare for NPM Publish
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
@@ -60,7 +60,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       # TODO Uncomment to publish to GitHub Package Registry
       # - name: Prepare for GPR Publish
-      #   uses: actions/setup-node@v3
+      #   uses: actions/setup-node@v4
       #   with:
       #     registry-url: 'https://npm.pkg.github.com'
       # - name: Publish to GitHub Registry
